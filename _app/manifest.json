@@ -1,0 +1,156 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-9ccda4e5.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-2e044943.js",
+      "_index-19c80a23.js",
+      "_singletons-d1fb5791.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/gallery.svelte",
+      "src/routes/index.svelte",
+      "src/routes/leaderboard.svelte",
+      "src/routes/login.svelte",
+      "src/routes/upload.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-16e059ad.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2e044943.js",
+      "_user-9d47edd4.js",
+      "_HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js",
+      "_Button-d45d2d2b.js",
+      "_Close-c5bb5817.js",
+      "_index-19c80a23.js",
+      "_navigation-0e6511d1.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-06e26024.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2e044943.js"
+    ]
+  },
+  "src/routes/gallery.svelte": {
+    "file": "pages/gallery.svelte-0f4917cb.js",
+    "src": "src/routes/gallery.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2e044943.js",
+      "_HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js",
+      "_Button-d45d2d2b.js",
+      "_cartoons-1bce853c.js",
+      "_user-9d47edd4.js",
+      "_index-19c80a23.js"
+    ],
+    "css": [
+      "assets/pages/gallery.svelte-8d011d55.css"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-73cf345d.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2e044943.js"
+    ]
+  },
+  "src/routes/leaderboard.svelte": {
+    "file": "pages/leaderboard.svelte-dbfde970.js",
+    "src": "src/routes/leaderboard.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2e044943.js",
+      "_HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js",
+      "_index-19c80a23.js",
+      "_Close-c5bb5817.js",
+      "_cartoons-1bce853c.js"
+    ]
+  },
+  "src/routes/login.svelte": {
+    "file": "pages/login.svelte-4cd3c130.js",
+    "src": "src/routes/login.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2e044943.js",
+      "_user-9d47edd4.js",
+      "_navigation-0e6511d1.js",
+      "_index-19c80a23.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "src/routes/upload.svelte": {
+    "file": "pages/upload.svelte-bc741ef4.js",
+    "src": "src/routes/upload.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-2e044943.js"
+    ]
+  },
+  "_index-2e044943.js": {
+    "file": "chunks/index-2e044943.js"
+  },
+  "_index-19c80a23.js": {
+    "file": "chunks/index-19c80a23.js",
+    "imports": [
+      "_index-2e044943.js"
+    ]
+  },
+  "_singletons-d1fb5791.js": {
+    "file": "chunks/singletons-d1fb5791.js"
+  },
+  "_user-9d47edd4.js": {
+    "file": "chunks/user-9d47edd4.js",
+    "imports": [
+      "_index-19c80a23.js"
+    ]
+  },
+  "_HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js": {
+    "file": "chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js",
+    "css": [
+      "assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css"
+    ]
+  },
+  "_Button-d45d2d2b.js": {
+    "file": "chunks/Button-d45d2d2b.js",
+    "imports": [
+      "_index-2e044943.js"
+    ]
+  },
+  "_navigation-0e6511d1.js": {
+    "file": "chunks/navigation-0e6511d1.js",
+    "imports": [
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "_Close-c5bb5817.js": {
+    "file": "chunks/Close-c5bb5817.js",
+    "imports": [
+      "_index-2e044943.js"
+    ]
+  },
+  "_cartoons-1bce853c.js": {
+    "file": "chunks/cartoons-1bce853c.js",
+    "imports": [
+      "_index-2e044943.js",
+      "_index-19c80a23.js"
+    ]
+  }
+}

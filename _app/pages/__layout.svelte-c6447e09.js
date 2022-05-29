@@ -2818,8 +2818,10 @@ class Logout extends SvelteComponent {
 }
 function create_default_slot_9(ctx) {
   let headernavitem0;
-  let t;
+  let t0;
   let headernavitem1;
+  let t1;
+  let headernavitem2;
   let current;
   headernavitem0 = new HeaderNavItem({
     props: { href: "gallery", text: "Gallery" }
@@ -2827,21 +2829,30 @@ function create_default_slot_9(ctx) {
   headernavitem1 = new HeaderNavItem({
     props: { href: "leaderboard", text: "Leaderboard" }
   });
+  headernavitem2 = new HeaderNavItem({
+    props: { href: "help", text: "Need Help?" }
+  });
   return {
     c() {
       create_component(headernavitem0.$$.fragment);
-      t = space();
+      t0 = space();
       create_component(headernavitem1.$$.fragment);
+      t1 = space();
+      create_component(headernavitem2.$$.fragment);
     },
     l(nodes) {
       claim_component(headernavitem0.$$.fragment, nodes);
-      t = claim_space(nodes);
+      t0 = claim_space(nodes);
       claim_component(headernavitem1.$$.fragment, nodes);
+      t1 = claim_space(nodes);
+      claim_component(headernavitem2.$$.fragment, nodes);
     },
     m(target, anchor) {
       mount_component(headernavitem0, target, anchor);
-      insert_hydration(target, t, anchor);
+      insert_hydration(target, t0, anchor);
       mount_component(headernavitem1, target, anchor);
+      insert_hydration(target, t1, anchor);
+      mount_component(headernavitem2, target, anchor);
       current = true;
     },
     p: noop,
@@ -2850,18 +2861,23 @@ function create_default_slot_9(ctx) {
         return;
       transition_in(headernavitem0.$$.fragment, local);
       transition_in(headernavitem1.$$.fragment, local);
+      transition_in(headernavitem2.$$.fragment, local);
       current = true;
     },
     o(local) {
       transition_out(headernavitem0.$$.fragment, local);
       transition_out(headernavitem1.$$.fragment, local);
+      transition_out(headernavitem2.$$.fragment, local);
       current = false;
     },
     d(detaching) {
       destroy_component(headernavitem0, detaching);
       if (detaching)
-        detach(t);
+        detach(t0);
       destroy_component(headernavitem1, detaching);
+      if (detaching)
+        detach(t1);
+      destroy_component(headernavitem2, detaching);
     }
   };
 }

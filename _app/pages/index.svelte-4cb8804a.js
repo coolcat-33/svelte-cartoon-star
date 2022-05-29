@@ -2,7 +2,7 @@ import { S as SvelteComponent, i as init, s as safe_not_equal } from "../chunks/
 async function load() {
   return {
     status: 301,
-    redirect: `/svelete-cartoon-star/login`
+    redirect: `/svelte-cartoon-star/login`
   };
 }
 class Routes extends SvelteComponent {

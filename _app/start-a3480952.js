@@ -29,8 +29,8 @@ var __objRest = (source, exclude) => {
     }
   return target;
 };
-import { S as SvelteComponent, i as init, s as safe_not_equal, e as element, c as claim_element, a as children, d as detach, b as attr, f as set_style, g as insert_hydration, t as text, h as claim_text, j as set_data, k as space, l as empty, m as claim_space, n as group_outros, o as transition_out, p as check_outros, q as transition_in, r as setContext, u as afterUpdate, v as onMount, w as create_component, x as claim_component, y as mount_component, z as get_spread_update, A as get_spread_object, B as destroy_component, C as assign, D as tick } from "./chunks/index-2e044943.js";
-import { w as writable } from "./chunks/index-19c80a23.js";
+import { S as SvelteComponent, i as init, s as safe_not_equal, e as element, c as claim_element, a as children, d as detach, b as attr, f as set_style, g as insert_hydration, t as text, h as claim_text, j as set_data, k as space, l as empty, m as claim_space, n as group_outros, o as transition_out, p as check_outros, q as transition_in, r as setContext, u as afterUpdate, v as onMount, w as create_component, x as claim_component, y as mount_component, z as get_spread_update, A as get_spread_object, B as destroy_component, C as assign, D as tick } from "./chunks/index-f49af62c.js";
+import { w as writable } from "./chunks/index-c8a6f409.js";
 import { i as init$1 } from "./chunks/singletons-d1fb5791.js";
 let base$1 = "";
 let assets = "";
@@ -773,20 +773,18 @@ const __vitePreload = function preload(baseModule, deps) {
 };
 const matchers = {};
 const components = [
-  () => __vitePreload(() => import("./pages/__layout.svelte-16e059ad.js"), true ? ["pages/__layout.svelte-16e059ad.js","chunks/index-2e044943.js","chunks/user-9d47edd4.js","chunks/index-19c80a23.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/Button-d45d2d2b.js","chunks/Close-c5bb5817.js","chunks/navigation-0e6511d1.js","chunks/singletons-d1fb5791.js"] : void 0),
-  () => __vitePreload(() => import("./error.svelte-06e26024.js"), true ? ["error.svelte-06e26024.js","chunks/index-2e044943.js"] : void 0),
-  () => __vitePreload(() => import("./pages/gallery.svelte-0f4917cb.js"), true ? ["pages/gallery.svelte-0f4917cb.js","assets/pages/gallery.svelte-8d011d55.css","chunks/index-2e044943.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/Button-d45d2d2b.js","chunks/cartoons-1bce853c.js","chunks/index-19c80a23.js","chunks/user-9d47edd4.js"] : void 0),
-  () => __vitePreload(() => import("./pages/index.svelte-73cf345d.js"), true ? ["pages/index.svelte-73cf345d.js","chunks/index-2e044943.js"] : void 0),
-  () => __vitePreload(() => import("./pages/leaderboard.svelte-dbfde970.js"), true ? ["pages/leaderboard.svelte-dbfde970.js","chunks/index-2e044943.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/index-19c80a23.js","chunks/Close-c5bb5817.js","chunks/cartoons-1bce853c.js"] : void 0),
-  () => __vitePreload(() => import("./pages/login.svelte-4cd3c130.js"), true ? ["pages/login.svelte-4cd3c130.js","chunks/index-2e044943.js","chunks/user-9d47edd4.js","chunks/index-19c80a23.js","chunks/navigation-0e6511d1.js","chunks/singletons-d1fb5791.js"] : void 0),
-  () => __vitePreload(() => import("./pages/upload.svelte-bc741ef4.js"), true ? ["pages/upload.svelte-bc741ef4.js","chunks/index-2e044943.js"] : void 0)
+  () => __vitePreload(() => import("./pages/__layout.svelte-32eef28d.js"), true ? ["pages/__layout.svelte-32eef28d.js","chunks/index-f49af62c.js","chunks/user-caa78ed2.js","chunks/index-c8a6f409.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/index-bd33cef0.js","chunks/Close-d926bb3c.js","chunks/navigation-0e6511d1.js","chunks/singletons-d1fb5791.js"] : void 0),
+  () => __vitePreload(() => import("./error.svelte-0fb4568e.js"), true ? ["error.svelte-0fb4568e.js","chunks/index-f49af62c.js"] : void 0),
+  () => __vitePreload(() => import("./pages/gallery.svelte-ebd288a4.js"), true ? ["pages/gallery.svelte-ebd288a4.js","assets/pages/gallery.svelte-95f9ff87.css","chunks/index-f49af62c.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/index-bd33cef0.js","chunks/cartoons-fccfd6a7.js","chunks/index-c8a6f409.js","chunks/user-caa78ed2.js"] : void 0),
+  () => __vitePreload(() => import("./pages/index.svelte-f038125f.js"), true ? ["pages/index.svelte-f038125f.js","chunks/index-f49af62c.js"] : void 0),
+  () => __vitePreload(() => import("./pages/leaderboard.svelte-1e64466c.js"), true ? ["pages/leaderboard.svelte-1e64466c.js","chunks/index-f49af62c.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/index-c8a6f409.js","chunks/Close-d926bb3c.js","chunks/cartoons-fccfd6a7.js"] : void 0),
+  () => __vitePreload(() => import("./pages/login.svelte-ef912956.js"), true ? ["pages/login.svelte-ef912956.js","chunks/index-f49af62c.js","chunks/user-caa78ed2.js","chunks/index-c8a6f409.js","chunks/navigation-0e6511d1.js","chunks/singletons-d1fb5791.js"] : void 0)
 ];
 const dictionary = {
   "": [[0, 3], [1]],
   "gallery": [[0, 2], [1]],
   "leaderboard": [[0, 4], [1]],
-  "login": [[0, 5], [1]],
-  "upload": [[0, 6], [1]]
+  "login": [[0, 5], [1]]
 };
 function coalesce_to_error(err) {
   return err instanceof Error || err && err.name && err.message ? err : new Error(JSON.stringify(err));
@@ -910,7 +908,7 @@ function notifiable_store(value) {
 }
 function create_updated_store() {
   const { set, subscribe } = writable(false);
-  const initial = "1653761397094";
+  const initial = "1653785456739";
   let timeout;
   async function check() {
     clearTimeout(timeout);

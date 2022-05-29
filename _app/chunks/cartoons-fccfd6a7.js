@@ -1,5 +1,5 @@
-import "./index-2e044943.js";
-import { w as writable } from "./index-19c80a23.js";
+import "./index-f49af62c.js";
+import { w as writable } from "./index-c8a6f409.js";
 const cartoons = writable([]);
 Parse.initialize("7NnO7LU7KFHLozh4WvODyf3dsaaCCIZrrkUcuKpR", "9aisPLhHCoN5TxLgYXKus5jlBgKMh1cLJylttQ0y");
 Parse.serverURL = "https://parseapi.back4app.com/";
@@ -14,7 +14,8 @@ const fetchCartoons = async () => {
       let users_liked = object.get("users_liked");
       const user = object.get("user");
       const email = object.get("email");
-      data.push({ url, id, users_liked, likes, object, user, email });
+      let type = object.get("type");
+      data.push({ url, id, users_liked, likes, object, user, email, type });
     }
     cartoons.set(data);
     console.log(data);

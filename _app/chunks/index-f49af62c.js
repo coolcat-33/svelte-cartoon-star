@@ -108,6 +108,9 @@ function compute_slots(slots) {
   }
   return result;
 }
+function null_to_empty(value) {
+  return value == null ? "" : value;
+}
 function set_store_value(store, ret, value) {
   store.set(value);
   return ret;
@@ -654,6 +657,120 @@ function transition_out(block, local, detach2, callback) {
   }
 }
 const null_transition = { duration: 0 };
+function create_in_transition(node, fn, params) {
+  let config = fn(node, params);
+  let running = false;
+  let animation_name;
+  let task;
+  let uid = 0;
+  function cleanup() {
+    if (animation_name)
+      delete_rule(node, animation_name);
+  }
+  function go() {
+    const { delay = 0, duration = 300, easing = identity, tick: tick2 = noop, css } = config || null_transition;
+    if (css)
+      animation_name = create_rule(node, 0, 1, duration, delay, easing, css, uid++);
+    tick2(0, 1);
+    const start_time = now() + delay;
+    const end_time = start_time + duration;
+    if (task)
+      task.abort();
+    running = true;
+    add_render_callback(() => dispatch(node, true, "start"));
+    task = loop((now2) => {
+      if (running) {
+        if (now2 >= end_time) {
+          tick2(1, 0);
+          dispatch(node, true, "end");
+          cleanup();
+          return running = false;
+        }
+        if (now2 >= start_time) {
+          const t = easing((now2 - start_time) / duration);
+          tick2(t, 1 - t);
+        }
+      }
+      return running;
+    });
+  }
+  let started = false;
+  return {
+    start() {
+      if (started)
+        return;
+      started = true;
+      delete_rule(node);
+      if (is_function(config)) {
+        config = config();
+        wait().then(go);
+      } else {
+        go();
+      }
+    },
+    invalidate() {
+      started = false;
+    },
+    end() {
+      if (running) {
+        cleanup();
+        running = false;
+      }
+    }
+  };
+}
+function create_out_transition(node, fn, params) {
+  let config = fn(node, params);
+  let running = true;
+  let animation_name;
+  const group = outros;
+  group.r += 1;
+  function go() {
+    const { delay = 0, duration = 300, easing = identity, tick: tick2 = noop, css } = config || null_transition;
+    if (css)
+      animation_name = create_rule(node, 1, 0, duration, delay, easing, css);
+    const start_time = now() + delay;
+    const end_time = start_time + duration;
+    add_render_callback(() => dispatch(node, false, "start"));
+    loop((now2) => {
+      if (running) {
+        if (now2 >= end_time) {
+          tick2(0, 1);
+          dispatch(node, false, "end");
+          if (!--group.r) {
+            run_all(group.c);
+          }
+          return false;
+        }
+        if (now2 >= start_time) {
+          const t = easing((now2 - start_time) / duration);
+          tick2(1 - t, t);
+        }
+      }
+      return running;
+    });
+  }
+  if (is_function(config)) {
+    wait().then(() => {
+      config = config();
+      go();
+    });
+  } else {
+    go();
+  }
+  return {
+    end(reset) {
+      if (reset && config.tick) {
+        config.tick(1, 0);
+      }
+      if (running) {
+        if (animation_name)
+          delete_rule(node, animation_name);
+        running = false;
+      }
+    }
+  };
+}
 function create_bidirectional_transition(node, fn, params, intro) {
   let config = fn(node, params);
   let t = intro ? 0 : 1;
@@ -748,6 +865,7 @@ function create_bidirectional_transition(node, fn, params, intro) {
     }
   };
 }
+const globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : global;
 function outro_and_destroy_block(block, lookup) {
   transition_out(block, 1, 1, () => {
     lookup.delete(block.key);
@@ -977,4 +1095,4 @@ class SvelteComponent {
     }
   }
 }
-export { bind as $, get_spread_object as A, destroy_component as B, assign as C, tick as D, noop as E, subscribe as F, run_all as G, is_function as H, svg_element as I, claim_svg_element as J, append_hydration as K, set_svg_attributes as L, compute_rest_props as M, exclude_internal_props as N, set_attributes as O, toggle_class as P, listen as Q, bubble as R, SvelteComponent as S, binding_callbacks as T, add_render_callback as U, create_slot as V, add_flush_callback as W, update_slot_base as X, get_all_dirty_from_scope as Y, get_slot_changes as Z, component_subscribe as _, children as a, create_bidirectional_transition as a0, stop_propagation as a1, createEventDispatcher as a2, getContext as a3, compute_slots as a4, query_selector_all as a5, src_url_equal as a6, set_store_value as a7, prevent_default as a8, action_destroyer as a9, get_current_component as aa, onDestroy as ab, destroy_each as ac, update_keyed_each as ad, outro_and_destroy_block as ae, set_input_value as af, attr as b, claim_element as c, detach as d, element as e, set_style as f, insert_hydration as g, claim_text as h, init as i, set_data as j, space as k, empty as l, claim_space as m, group_outros as n, transition_out as o, check_outros as p, transition_in as q, setContext as r, safe_not_equal as s, text as t, afterUpdate as u, onMount as v, create_component as w, claim_component as x, mount_component as y, get_spread_update as z };
+export { bind as $, get_spread_object as A, destroy_component as B, assign as C, tick as D, noop as E, subscribe as F, run_all as G, is_function as H, svg_element as I, claim_svg_element as J, append_hydration as K, set_svg_attributes as L, compute_rest_props as M, exclude_internal_props as N, set_attributes as O, toggle_class as P, listen as Q, bubble as R, SvelteComponent as S, binding_callbacks as T, add_render_callback as U, create_slot as V, add_flush_callback as W, update_slot_base as X, get_all_dirty_from_scope as Y, get_slot_changes as Z, component_subscribe as _, children as a, create_bidirectional_transition as a0, stop_propagation as a1, createEventDispatcher as a2, getContext as a3, compute_slots as a4, query_selector_all as a5, src_url_equal as a6, set_store_value as a7, prevent_default as a8, action_destroyer as a9, get_current_component as aa, onDestroy as ab, null_to_empty as ac, create_in_transition as ad, create_out_transition as ae, globals as af, set_input_value as ag, destroy_each as ah, update_keyed_each as ai, outro_and_destroy_block as aj, attr as b, claim_element as c, detach as d, element as e, set_style as f, insert_hydration as g, claim_text as h, init as i, set_data as j, space as k, empty as l, claim_space as m, group_outros as n, transition_out as o, check_outros as p, transition_in as q, setContext as r, safe_not_equal as s, text as t, afterUpdate as u, onMount as v, create_component as w, claim_component as x, mount_component as y, get_spread_update as z };

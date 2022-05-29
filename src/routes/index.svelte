@@ -2,7 +2,7 @@
     export async function load() {
       return {
         status: 301,
-        redirect: `/svelete-cartoon-star/login`,
+        redirect: `/svelte-cartoon-star/login`,
       }
     }
 </script>

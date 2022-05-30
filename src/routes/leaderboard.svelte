@@ -26,9 +26,11 @@
             if (found != -1) {
                 users[found]['XP'] += XP
             } else {
-                users.push({id:i, user, XP, email})
+              
+                users.push({id:i+1, user, XP, email})
             }
         }
+        users.sort((a,b) => {a.XP < b.XP})
         console.log(users)
     })
 

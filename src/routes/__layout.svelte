@@ -11,6 +11,11 @@
     HeaderPanelDivider,
     HeaderPanelLink,
     SkipToContent,
+    SideNav,
+    SideNavItems,
+    SideNavMenu,
+    SideNavMenuItem,
+    SideNavLink,
     Content,
     Grid,
     Row,
@@ -70,7 +75,7 @@ import { get } from "svelte/store";
 </script>
 <!-- {#if $user["userLoggedIn"]} -->
 
-<Header company="SXS0130" platformName="Cartoon Star" bind:isSideNavOpen>
+<Header company="SXS0130" platformName="Cartoon Star" persistentHamburgerMenu=true bind:isSideNavOpen>
   <svelte:fragment slot="skip-to-content">
     <SkipToContent />
   </svelte:fragment>
@@ -105,7 +110,15 @@ import { get } from "svelte/store";
       </HeaderPanelLinks>
     </HeaderAction>
   </HeaderUtilities>
+  <SideNav bind:isOpen={isSideNavOpen} >
+    <SideNavItems>
+      <SideNavMenuItem href="gallery" text="Gallery" />
+      <SideNavMenuItem href="leaderboard" text="Leaderboard" />
+      <SideNavMenuItem href="help" text="Need Help?" />
+    </SideNavItems>
+  </SideNav>
 </Header>
+
 <!-- {/if} -->
 <svelte:head>
   <script src="https://apis.google.com/js/platform.js?onload=onLoadCallback" async defer></script>

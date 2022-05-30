@@ -25,7 +25,7 @@ import { C as Close } from "../chunks/Close-d926bb3c.js";
 import { w as writable } from "../chunks/index-c8a6f409.js";
 import { g as goto } from "../chunks/navigation-0e6511d1.js";
 import "../chunks/singletons-d1fb5791.js";
-function create_if_block$7(ctx) {
+function create_if_block$8(ctx) {
   let title_1;
   let t;
   return {
@@ -53,10 +53,10 @@ function create_if_block$7(ctx) {
     }
   };
 }
-function create_fragment$f(ctx) {
+function create_fragment$i(ctx) {
   let svg;
   let path;
-  let if_block = ctx[1] && create_if_block$7(ctx);
+  let if_block = ctx[1] && create_if_block$8(ctx);
   let svg_levels = [
     { xmlns: "http://www.w3.org/2000/svg" },
     { viewBox: "0 0 32 32" },
@@ -111,7 +111,7 @@ function create_fragment$f(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$7(ctx2);
+          if_block = create_if_block$8(ctx2);
           if_block.c();
           if_block.m(svg, path);
         }
@@ -140,7 +140,7 @@ function create_fragment$f(ctx) {
     }
   };
 }
-function instance$f($$self, $$props, $$invalidate) {
+function instance$i($$self, $$props, $$invalidate) {
   let labelled;
   let attributes;
   const omit_props_names = ["size", "title"];
@@ -169,11 +169,11 @@ function instance$f($$self, $$props, $$invalidate) {
 class Menu extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$f, create_fragment$f, safe_not_equal, { size: 0, title: 1 });
+    init(this, options, instance$i, create_fragment$i, safe_not_equal, { size: 0, title: 1 });
   }
 }
 const shouldRenderHamburgerMenu = writable(false);
-function create_fragment$e(ctx) {
+function create_fragment$h(ctx) {
   let button;
   let switch_instance;
   let current;
@@ -290,7 +290,7 @@ function create_fragment$e(ctx) {
     }
   };
 }
-function instance$e($$self, $$props, $$invalidate) {
+function instance$h($$self, $$props, $$invalidate) {
   const omit_props_names = ["ariaLabel", "isOpen", "iconMenu", "iconClose", "ref"];
   let $$restProps = compute_rest_props($$props, omit_props_names);
   let { ariaLabel = void 0 } = $$props;
@@ -337,7 +337,7 @@ function instance$e($$self, $$props, $$invalidate) {
 class HamburgerMenu extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$e, create_fragment$e, safe_not_equal, {
+    init(this, options, instance$h, create_fragment$h, safe_not_equal, {
       ariaLabel: 2,
       isOpen: 0,
       iconMenu: 3,
@@ -405,7 +405,7 @@ function create_if_block_1$2(ctx) {
     }
   };
 }
-function create_if_block$6(ctx) {
+function create_if_block$7(ctx) {
   let span;
   let t0;
   let t1;
@@ -442,7 +442,7 @@ function create_if_block$6(ctx) {
     }
   };
 }
-function fallback_block$2(ctx) {
+function fallback_block$3(ctx) {
   let t;
   return {
     c() {
@@ -464,7 +464,7 @@ function fallback_block$2(ctx) {
     }
   };
 }
-function create_fragment$d(ctx) {
+function create_fragment$g(ctx) {
   let header;
   let t0;
   let t1;
@@ -478,10 +478,10 @@ function create_fragment$d(ctx) {
   const skip_to_content_slot_template = ctx[16]["skip-to-content"];
   const skip_to_content_slot = create_slot(skip_to_content_slot_template, ctx, ctx[15], get_skip_to_content_slot_context);
   let if_block0 = (ctx[11] && ctx[9] < ctx[6] || ctx[5]) && create_if_block_1$2(ctx);
-  let if_block1 = ctx[3] && create_if_block$6(ctx);
+  let if_block1 = ctx[3] && create_if_block$7(ctx);
   const platform_slot_template = ctx[16].platform;
   const platform_slot = create_slot(platform_slot_template, ctx, ctx[15], get_platform_slot_context);
-  const platform_slot_or_fallback = platform_slot || fallback_block$2(ctx);
+  const platform_slot_or_fallback = platform_slot || fallback_block$3(ctx);
   let a_levels = [{ href: ctx[2] }, ctx[12]];
   let a_data = {};
   for (let i = 0; i < a_levels.length; i += 1) {
@@ -597,7 +597,7 @@ function create_fragment$d(ctx) {
         if (if_block1) {
           if_block1.p(ctx2, dirty);
         } else {
-          if_block1 = create_if_block$6(ctx2);
+          if_block1 = create_if_block$7(ctx2);
           if_block1.c();
           if_block1.m(a, t2);
         }
@@ -663,7 +663,7 @@ function create_fragment$d(ctx) {
     }
   };
 }
-function instance$d($$self, $$props, $$invalidate) {
+function instance$g($$self, $$props, $$invalidate) {
   let ariaLabel;
   const omit_props_names = [
     "expandedByDefault",
@@ -772,7 +772,7 @@ function instance$d($$self, $$props, $$invalidate) {
 class Header extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$d, create_fragment$d, safe_not_equal, {
+    init(this, options, instance$g, create_fragment$g, safe_not_equal, {
       expandedByDefault: 13,
       isSideNavOpen: 0,
       uiShellAriaLabel: 14,
@@ -787,7 +787,7 @@ class Header extends SvelteComponent {
     });
   }
 }
-function create_if_block$5(ctx) {
+function create_if_block$6(ctx) {
   let title_1;
   let t;
   return {
@@ -815,10 +815,10 @@ function create_if_block$5(ctx) {
     }
   };
 }
-function create_fragment$c(ctx) {
+function create_fragment$f(ctx) {
   let svg;
   let path;
-  let if_block = ctx[1] && create_if_block$5(ctx);
+  let if_block = ctx[1] && create_if_block$6(ctx);
   let svg_levels = [
     { xmlns: "http://www.w3.org/2000/svg" },
     { viewBox: "0 0 32 32" },
@@ -873,7 +873,7 @@ function create_fragment$c(ctx) {
         if (if_block) {
           if_block.p(ctx2, dirty);
         } else {
-          if_block = create_if_block$5(ctx2);
+          if_block = create_if_block$6(ctx2);
           if_block.c();
           if_block.m(svg, path);
         }
@@ -902,7 +902,7 @@ function create_fragment$c(ctx) {
     }
   };
 }
-function instance$c($$self, $$props, $$invalidate) {
+function instance$f($$self, $$props, $$invalidate) {
   let labelled;
   let attributes;
   const omit_props_names = ["size", "title"];
@@ -931,7 +931,7 @@ function instance$c($$self, $$props, $$invalidate) {
 class Switcher extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$c, create_fragment$c, safe_not_equal, { size: 0, title: 1 });
+    init(this, options, instance$f, create_fragment$f, safe_not_equal, { size: 0, title: 1 });
   }
 }
 const get_text_slot_changes = (dirty) => ({});
@@ -1205,7 +1205,7 @@ function create_if_block_1$1(ctx) {
     }
   };
 }
-function fallback_block$1(ctx) {
+function fallback_block$2(ctx) {
   let if_block_anchor;
   let if_block = ctx[4] && create_if_block_1$1(ctx);
   return {
@@ -1246,7 +1246,7 @@ function fallback_block$1(ctx) {
     }
   };
 }
-function create_if_block$4(ctx) {
+function create_if_block$5(ctx) {
   let div;
   let div_transition;
   let current;
@@ -1320,7 +1320,7 @@ function create_if_block$4(ctx) {
     }
   };
 }
-function create_fragment$b(ctx) {
+function create_fragment$e(ctx) {
   let button;
   let current_block_type_index;
   let if_block0;
@@ -1341,13 +1341,13 @@ function create_fragment$b(ctx) {
   if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
   const text_slot_template = ctx[10].text;
   const text_slot = create_slot(text_slot_template, ctx, ctx[9], get_text_slot_context);
-  const text_slot_or_fallback = text_slot || fallback_block$1(ctx);
+  const text_slot_or_fallback = text_slot || fallback_block$2(ctx);
   let button_levels = [{ type: "button" }, ctx[8]];
   let button_data = {};
   for (let i = 0; i < button_levels.length; i += 1) {
     button_data = assign(button_data, button_levels[i]);
   }
-  let if_block1 = ctx[0] && create_if_block$4(ctx);
+  let if_block1 = ctx[0] && create_if_block$5(ctx);
   return {
     c() {
       button = element("button");
@@ -1448,7 +1448,7 @@ function create_fragment$b(ctx) {
             transition_in(if_block1, 1);
           }
         } else {
-          if_block1 = create_if_block$4(ctx2);
+          if_block1 = create_if_block$5(ctx2);
           if_block1.c();
           transition_in(if_block1, 1);
           if_block1.m(if_block1_anchor.parentNode, if_block1_anchor);
@@ -1493,7 +1493,7 @@ function create_fragment$b(ctx) {
     }
   };
 }
-function instance$b($$self, $$props, $$invalidate) {
+function instance$e($$self, $$props, $$invalidate) {
   const omit_props_names = ["isOpen", "icon", "closeIcon", "text", "ref", "transition"];
   let $$restProps = compute_rest_props($$props, omit_props_names);
   let { $$slots: slots = {}, $$scope } = $$props;
@@ -1570,7 +1570,7 @@ function instance$b($$self, $$props, $$invalidate) {
 class HeaderAction extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$b, create_fragment$b, safe_not_equal, {
+    init(this, options, instance$e, create_fragment$e, safe_not_equal, {
       isOpen: 0,
       icon: 2,
       closeIcon: 3,
@@ -1580,7 +1580,7 @@ class HeaderAction extends SvelteComponent {
     });
   }
 }
-function create_fragment$a(ctx) {
+function create_fragment$d(ctx) {
   let nav;
   let ul;
   let current;
@@ -1661,7 +1661,7 @@ function create_fragment$a(ctx) {
     }
   };
 }
-function instance$a($$self, $$props, $$invalidate) {
+function instance$d($$self, $$props, $$invalidate) {
   let props;
   const omit_props_names = [];
   let $$restProps = compute_rest_props($$props, omit_props_names);
@@ -1684,10 +1684,10 @@ function instance$a($$self, $$props, $$invalidate) {
 class HeaderNav extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$a, create_fragment$a, safe_not_equal, {});
+    init(this, options, instance$d, create_fragment$d, safe_not_equal, {});
   }
 }
-function create_fragment$9(ctx) {
+function create_fragment$c(ctx) {
   let li;
   let a;
   let span;
@@ -1790,7 +1790,7 @@ function create_fragment$9(ctx) {
     }
   };
 }
-function instance$9($$self, $$props, $$invalidate) {
+function instance$c($$self, $$props, $$invalidate) {
   const omit_props_names = ["href", "text", "isSelected", "ref"];
   let $$restProps = compute_rest_props($$props, omit_props_names);
   let { href = void 0 } = $$props;
@@ -1885,10 +1885,10 @@ function instance$9($$self, $$props, $$invalidate) {
 class HeaderNavItem extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$9, create_fragment$9, safe_not_equal, { href: 1, text: 2, isSelected: 3, ref: 0 });
+    init(this, options, instance$c, create_fragment$c, safe_not_equal, { href: 1, text: 2, isSelected: 3, ref: 0 });
   }
 }
-function create_if_block$3(ctx) {
+function create_if_block$4(ctx) {
   let li;
   let span;
   let current;
@@ -1950,11 +1950,11 @@ function create_if_block$3(ctx) {
     }
   };
 }
-function create_fragment$8(ctx) {
+function create_fragment$b(ctx) {
   let t;
   let hr;
   let current;
-  let if_block = ctx[0].default && create_if_block$3(ctx);
+  let if_block = ctx[0].default && create_if_block$4(ctx);
   return {
     c() {
       if (if_block)
@@ -1988,7 +1988,7 @@ function create_fragment$8(ctx) {
             transition_in(if_block, 1);
           }
         } else {
-          if_block = create_if_block$3(ctx2);
+          if_block = create_if_block$4(ctx2);
           if_block.c();
           transition_in(if_block, 1);
           if_block.m(t.parentNode, t);
@@ -2021,7 +2021,7 @@ function create_fragment$8(ctx) {
     }
   };
 }
-function instance$8($$self, $$props, $$invalidate) {
+function instance$b($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   const $$slots = compute_slots(slots);
   $$self.$$set = ($$props2) => {
@@ -2033,10 +2033,10 @@ function instance$8($$self, $$props, $$invalidate) {
 class HeaderPanelDivider extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$8, create_fragment$8, safe_not_equal, {});
+    init(this, options, instance$b, create_fragment$b, safe_not_equal, {});
   }
 }
-function create_fragment$7(ctx) {
+function create_fragment$a(ctx) {
   let li;
   let a;
   let a_rel_value;
@@ -2127,7 +2127,7 @@ function create_fragment$7(ctx) {
     }
   };
 }
-function instance$7($$self, $$props, $$invalidate) {
+function instance$a($$self, $$props, $$invalidate) {
   const omit_props_names = ["href", "ref"];
   let $$restProps = compute_rest_props($$props, omit_props_names);
   let { $$slots: slots = {}, $$scope } = $$props;
@@ -2157,10 +2157,10 @@ function instance$7($$self, $$props, $$invalidate) {
 class HeaderPanelLink extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$7, create_fragment$7, safe_not_equal, { href: 1, ref: 0 });
+    init(this, options, instance$a, create_fragment$a, safe_not_equal, { href: 1, ref: 0 });
   }
 }
-function create_fragment$6(ctx) {
+function create_fragment$9(ctx) {
   let ul;
   let current;
   const default_slot_template = ctx[1].default;
@@ -2215,7 +2215,7 @@ function create_fragment$6(ctx) {
     }
   };
 }
-function instance$6($$self, $$props, $$invalidate) {
+function instance$9($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   $$self.$$set = ($$props2) => {
     if ("$$scope" in $$props2)
@@ -2226,10 +2226,10 @@ function instance$6($$self, $$props, $$invalidate) {
 class HeaderPanelLinks extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$6, create_fragment$6, safe_not_equal, {});
+    init(this, options, instance$9, create_fragment$9, safe_not_equal, {});
   }
 }
-function create_fragment$5(ctx) {
+function create_fragment$8(ctx) {
   let div;
   let current;
   const default_slot_template = ctx[1].default;
@@ -2284,7 +2284,7 @@ function create_fragment$5(ctx) {
     }
   };
 }
-function instance$5($$self, $$props, $$invalidate) {
+function instance$8($$self, $$props, $$invalidate) {
   let { $$slots: slots = {}, $$scope } = $$props;
   $$self.$$set = ($$props2) => {
     if ("$$scope" in $$props2)
@@ -2295,7 +2295,478 @@ function instance$5($$self, $$props, $$invalidate) {
 class HeaderUtilities extends SvelteComponent {
   constructor(options) {
     super();
-    init(this, options, instance$5, create_fragment$5, safe_not_equal, {});
+    init(this, options, instance$8, create_fragment$8, safe_not_equal, {});
+  }
+}
+function create_if_block$3(ctx) {
+  let div;
+  let mounted;
+  let dispose;
+  return {
+    c() {
+      div = element("div");
+      this.h();
+    },
+    l(nodes) {
+      div = claim_element(nodes, "DIV", {});
+      children(div).forEach(detach);
+      this.h();
+    },
+    h() {
+      toggle_class(div, "bx--side-nav__overlay", true);
+      toggle_class(div, "bx--side-nav__overlay-active", ctx[0]);
+    },
+    m(target, anchor) {
+      insert_hydration(target, div, anchor);
+      if (!mounted) {
+        dispose = listen(div, "click", ctx[11]);
+        mounted = true;
+      }
+    },
+    p(ctx2, dirty) {
+      if (dirty & 1) {
+        toggle_class(div, "bx--side-nav__overlay-active", ctx2[0]);
+      }
+    },
+    d(detaching) {
+      if (detaching)
+        detach(div);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function create_fragment$7(ctx) {
+  let t;
+  let nav;
+  let nav_aria_hidden_value;
+  let current;
+  let mounted;
+  let dispose;
+  add_render_callback(ctx[10]);
+  let if_block = !ctx[1] && create_if_block$3(ctx);
+  const default_slot_template = ctx[9].default;
+  const default_slot = create_slot(default_slot_template, ctx, ctx[8], null);
+  let nav_levels = [
+    {
+      "aria-hidden": nav_aria_hidden_value = !ctx[0]
+    },
+    { "aria-label": ctx[3] },
+    ctx[7]
+  ];
+  let nav_data = {};
+  for (let i = 0; i < nav_levels.length; i += 1) {
+    nav_data = assign(nav_data, nav_levels[i]);
+  }
+  return {
+    c() {
+      if (if_block)
+        if_block.c();
+      t = space();
+      nav = element("nav");
+      if (default_slot)
+        default_slot.c();
+      this.h();
+    },
+    l(nodes) {
+      if (if_block)
+        if_block.l(nodes);
+      t = claim_space(nodes);
+      nav = claim_element(nodes, "NAV", { "aria-hidden": true, "aria-label": true });
+      var nav_nodes = children(nav);
+      if (default_slot)
+        default_slot.l(nav_nodes);
+      nav_nodes.forEach(detach);
+      this.h();
+    },
+    h() {
+      set_attributes(nav, nav_data);
+      toggle_class(nav, "bx--side-nav__navigation", true);
+      toggle_class(nav, "bx--side-nav", true);
+      toggle_class(nav, "bx--side-nav--ux", true);
+      toggle_class(nav, "bx--side-nav--expanded", ctx[2] && ctx[5] >= ctx[4] ? false : ctx[0]);
+      toggle_class(nav, "bx--side-nav--collapsed", !ctx[0] && !ctx[2]);
+      toggle_class(nav, "bx--side-nav--rail", ctx[2]);
+    },
+    m(target, anchor) {
+      if (if_block)
+        if_block.m(target, anchor);
+      insert_hydration(target, t, anchor);
+      insert_hydration(target, nav, anchor);
+      if (default_slot) {
+        default_slot.m(nav, null);
+      }
+      current = true;
+      if (!mounted) {
+        dispose = listen(window, "resize", ctx[10]);
+        mounted = true;
+      }
+    },
+    p(ctx2, [dirty]) {
+      if (!ctx2[1]) {
+        if (if_block) {
+          if_block.p(ctx2, dirty);
+        } else {
+          if_block = create_if_block$3(ctx2);
+          if_block.c();
+          if_block.m(t.parentNode, t);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & 256)) {
+          update_slot_base(default_slot, default_slot_template, ctx2, ctx2[8], !current ? get_all_dirty_from_scope(ctx2[8]) : get_slot_changes(default_slot_template, ctx2[8], dirty, null), null);
+        }
+      }
+      set_attributes(nav, nav_data = get_spread_update(nav_levels, [
+        (!current || dirty & 1 && nav_aria_hidden_value !== (nav_aria_hidden_value = !ctx2[0])) && { "aria-hidden": nav_aria_hidden_value },
+        (!current || dirty & 8) && { "aria-label": ctx2[3] },
+        dirty & 128 && ctx2[7]
+      ]));
+      toggle_class(nav, "bx--side-nav__navigation", true);
+      toggle_class(nav, "bx--side-nav", true);
+      toggle_class(nav, "bx--side-nav--ux", true);
+      toggle_class(nav, "bx--side-nav--expanded", ctx2[2] && ctx2[5] >= ctx2[4] ? false : ctx2[0]);
+      toggle_class(nav, "bx--side-nav--collapsed", !ctx2[0] && !ctx2[2]);
+      toggle_class(nav, "bx--side-nav--rail", ctx2[2]);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (if_block)
+        if_block.d(detaching);
+      if (detaching)
+        detach(t);
+      if (detaching)
+        detach(nav);
+      if (default_slot)
+        default_slot.d(detaching);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function instance$7($$self, $$props, $$invalidate) {
+  const omit_props_names = ["fixed", "rail", "ariaLabel", "isOpen", "expansionBreakpoint"];
+  let $$restProps = compute_rest_props($$props, omit_props_names);
+  let { $$slots: slots = {}, $$scope } = $$props;
+  let { fixed = false } = $$props;
+  let { rail = false } = $$props;
+  let { ariaLabel = void 0 } = $$props;
+  let { isOpen = false } = $$props;
+  let { expansionBreakpoint = 1056 } = $$props;
+  const dispatch = createEventDispatcher();
+  let winWidth = void 0;
+  onMount(() => {
+    shouldRenderHamburgerMenu.set(true);
+    return () => shouldRenderHamburgerMenu.set(false);
+  });
+  function onwindowresize() {
+    $$invalidate(5, winWidth = window.innerWidth);
+  }
+  const click_handler = () => {
+    dispatch("click:overlay");
+    $$invalidate(0, isOpen = false);
+  };
+  $$self.$$set = ($$new_props) => {
+    $$props = assign(assign({}, $$props), exclude_internal_props($$new_props));
+    $$invalidate(7, $$restProps = compute_rest_props($$props, omit_props_names));
+    if ("fixed" in $$new_props)
+      $$invalidate(1, fixed = $$new_props.fixed);
+    if ("rail" in $$new_props)
+      $$invalidate(2, rail = $$new_props.rail);
+    if ("ariaLabel" in $$new_props)
+      $$invalidate(3, ariaLabel = $$new_props.ariaLabel);
+    if ("isOpen" in $$new_props)
+      $$invalidate(0, isOpen = $$new_props.isOpen);
+    if ("expansionBreakpoint" in $$new_props)
+      $$invalidate(4, expansionBreakpoint = $$new_props.expansionBreakpoint);
+    if ("$$scope" in $$new_props)
+      $$invalidate(8, $$scope = $$new_props.$$scope);
+  };
+  $$self.$$.update = () => {
+    if ($$self.$$.dirty & 1) {
+      dispatch(isOpen ? "open" : "close");
+    }
+  };
+  return [
+    isOpen,
+    fixed,
+    rail,
+    ariaLabel,
+    expansionBreakpoint,
+    winWidth,
+    dispatch,
+    $$restProps,
+    $$scope,
+    slots,
+    onwindowresize,
+    click_handler
+  ];
+}
+class SideNav extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance$7, create_fragment$7, safe_not_equal, {
+      fixed: 1,
+      rail: 2,
+      ariaLabel: 3,
+      isOpen: 0,
+      expansionBreakpoint: 4
+    });
+  }
+}
+function create_fragment$6(ctx) {
+  let ul;
+  let current;
+  const default_slot_template = ctx[1].default;
+  const default_slot = create_slot(default_slot_template, ctx, ctx[0], null);
+  return {
+    c() {
+      ul = element("ul");
+      if (default_slot)
+        default_slot.c();
+      this.h();
+    },
+    l(nodes) {
+      ul = claim_element(nodes, "UL", {});
+      var ul_nodes = children(ul);
+      if (default_slot)
+        default_slot.l(ul_nodes);
+      ul_nodes.forEach(detach);
+      this.h();
+    },
+    h() {
+      toggle_class(ul, "bx--side-nav__items", true);
+    },
+    m(target, anchor) {
+      insert_hydration(target, ul, anchor);
+      if (default_slot) {
+        default_slot.m(ul, null);
+      }
+      current = true;
+    },
+    p(ctx2, [dirty]) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & 1)) {
+          update_slot_base(default_slot, default_slot_template, ctx2, ctx2[0], !current ? get_all_dirty_from_scope(ctx2[0]) : get_slot_changes(default_slot_template, ctx2[0], dirty, null), null);
+        }
+      }
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(ul);
+      if (default_slot)
+        default_slot.d(detaching);
+    }
+  };
+}
+function instance$6($$self, $$props, $$invalidate) {
+  let { $$slots: slots = {}, $$scope } = $$props;
+  $$self.$$set = ($$props2) => {
+    if ("$$scope" in $$props2)
+      $$invalidate(0, $$scope = $$props2.$$scope);
+  };
+  return [$$scope, slots];
+}
+class SideNavItems extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance$6, create_fragment$6, safe_not_equal, {});
+  }
+}
+function fallback_block$1(ctx) {
+  let t;
+  return {
+    c() {
+      t = text(ctx[3]);
+    },
+    l(nodes) {
+      t = claim_text(nodes, ctx[3]);
+    },
+    m(target, anchor) {
+      insert_hydration(target, t, anchor);
+    },
+    p(ctx2, dirty) {
+      if (dirty & 8)
+        set_data(t, ctx2[3]);
+    },
+    d(detaching) {
+      if (detaching)
+        detach(t);
+    }
+  };
+}
+function create_fragment$5(ctx) {
+  let li;
+  let a;
+  let span;
+  let a_aria_current_value;
+  let current;
+  let mounted;
+  let dispose;
+  const default_slot_template = ctx[6].default;
+  const default_slot = create_slot(default_slot_template, ctx, ctx[5], null);
+  const default_slot_or_fallback = default_slot || fallback_block$1(ctx);
+  let a_levels = [
+    {
+      "aria-current": a_aria_current_value = ctx[1] ? "page" : void 0
+    },
+    { href: ctx[2] },
+    ctx[4]
+  ];
+  let a_data = {};
+  for (let i = 0; i < a_levels.length; i += 1) {
+    a_data = assign(a_data, a_levels[i]);
+  }
+  return {
+    c() {
+      li = element("li");
+      a = element("a");
+      span = element("span");
+      if (default_slot_or_fallback)
+        default_slot_or_fallback.c();
+      this.h();
+    },
+    l(nodes) {
+      li = claim_element(nodes, "LI", {});
+      var li_nodes = children(li);
+      a = claim_element(li_nodes, "A", { "aria-current": true, href: true });
+      var a_nodes = children(a);
+      span = claim_element(a_nodes, "SPAN", {});
+      var span_nodes = children(span);
+      if (default_slot_or_fallback)
+        default_slot_or_fallback.l(span_nodes);
+      span_nodes.forEach(detach);
+      a_nodes.forEach(detach);
+      li_nodes.forEach(detach);
+      this.h();
+    },
+    h() {
+      toggle_class(span, "bx--side-nav__link-text", true);
+      set_attributes(a, a_data);
+      toggle_class(a, "bx--side-nav__link", true);
+      toggle_class(li, "bx--side-nav__menu-item", true);
+    },
+    m(target, anchor) {
+      insert_hydration(target, li, anchor);
+      append_hydration(li, a);
+      append_hydration(a, span);
+      if (default_slot_or_fallback) {
+        default_slot_or_fallback.m(span, null);
+      }
+      ctx[8](a);
+      current = true;
+      if (!mounted) {
+        dispose = listen(a, "click", ctx[7]);
+        mounted = true;
+      }
+    },
+    p(ctx2, [dirty]) {
+      if (default_slot) {
+        if (default_slot.p && (!current || dirty & 32)) {
+          update_slot_base(default_slot, default_slot_template, ctx2, ctx2[5], !current ? get_all_dirty_from_scope(ctx2[5]) : get_slot_changes(default_slot_template, ctx2[5], dirty, null), null);
+        }
+      } else {
+        if (default_slot_or_fallback && default_slot_or_fallback.p && (!current || dirty & 8)) {
+          default_slot_or_fallback.p(ctx2, !current ? -1 : dirty);
+        }
+      }
+      set_attributes(a, a_data = get_spread_update(a_levels, [
+        (!current || dirty & 2 && a_aria_current_value !== (a_aria_current_value = ctx2[1] ? "page" : void 0)) && { "aria-current": a_aria_current_value },
+        (!current || dirty & 4) && { href: ctx2[2] },
+        dirty & 16 && ctx2[4]
+      ]));
+      toggle_class(a, "bx--side-nav__link", true);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(default_slot_or_fallback, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(default_slot_or_fallback, local);
+      current = false;
+    },
+    d(detaching) {
+      if (detaching)
+        detach(li);
+      if (default_slot_or_fallback)
+        default_slot_or_fallback.d(detaching);
+      ctx[8](null);
+      mounted = false;
+      dispose();
+    }
+  };
+}
+function instance$5($$self, $$props, $$invalidate) {
+  const omit_props_names = ["isSelected", "href", "text", "ref"];
+  let $$restProps = compute_rest_props($$props, omit_props_names);
+  let { $$slots: slots = {}, $$scope } = $$props;
+  let { isSelected = false } = $$props;
+  let { href = void 0 } = $$props;
+  let { text: text2 = void 0 } = $$props;
+  let { ref = null } = $$props;
+  function click_handler(event) {
+    bubble.call(this, $$self, event);
+  }
+  function a_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](() => {
+      ref = $$value;
+      $$invalidate(0, ref);
+    });
+  }
+  $$self.$$set = ($$new_props) => {
+    $$props = assign(assign({}, $$props), exclude_internal_props($$new_props));
+    $$invalidate(4, $$restProps = compute_rest_props($$props, omit_props_names));
+    if ("isSelected" in $$new_props)
+      $$invalidate(1, isSelected = $$new_props.isSelected);
+    if ("href" in $$new_props)
+      $$invalidate(2, href = $$new_props.href);
+    if ("text" in $$new_props)
+      $$invalidate(3, text2 = $$new_props.text);
+    if ("ref" in $$new_props)
+      $$invalidate(0, ref = $$new_props.ref);
+    if ("$$scope" in $$new_props)
+      $$invalidate(5, $$scope = $$new_props.$$scope);
+  };
+  return [
+    ref,
+    isSelected,
+    href,
+    text2,
+    $$restProps,
+    $$scope,
+    slots,
+    click_handler,
+    a_binding
+  ];
+}
+class SideNavMenuItem extends SvelteComponent {
+  constructor(options) {
+    super();
+    init(this, options, instance$5, create_fragment$5, safe_not_equal, { isSelected: 1, href: 2, text: 3, ref: 0 });
   }
 }
 function create_fragment$4(ctx) {
@@ -2816,7 +3287,7 @@ class Logout extends SvelteComponent {
     init(this, options, instance$1, create_fragment$1, safe_not_equal, { size: 0, title: 1 });
   }
 }
-function create_default_slot_9(ctx) {
+function create_default_slot_11(ctx) {
   let headernavitem0;
   let t0;
   let headernavitem1;
@@ -2881,7 +3352,7 @@ function create_default_slot_9(ctx) {
     }
   };
 }
-function create_default_slot_8(ctx) {
+function create_default_slot_10(ctx) {
   let t;
   return {
     c() {
@@ -2908,19 +3379,19 @@ function create_if_block_1(ctx) {
   let current;
   headerpanellink0 = new HeaderPanelLink({
     props: {
-      $$slots: { default: [create_default_slot_7] },
+      $$slots: { default: [create_default_slot_9] },
       $$scope: { ctx }
     }
   });
   headerpanellink1 = new HeaderPanelLink({
     props: {
-      $$slots: { default: [create_default_slot_6] },
+      $$slots: { default: [create_default_slot_8] },
       $$scope: { ctx }
     }
   });
   headerpanellink2 = new HeaderPanelLink({
     props: {
-      $$slots: { default: [create_default_slot_5] },
+      $$slots: { default: [create_default_slot_7] },
       $$scope: { ctx }
     }
   });
@@ -2949,17 +3420,17 @@ function create_if_block_1(ctx) {
     },
     p(ctx2, dirty) {
       const headerpanellink0_changes = {};
-      if (dirty & 132) {
+      if (dirty & 260) {
         headerpanellink0_changes.$$scope = { dirty, ctx: ctx2 };
       }
       headerpanellink0.$set(headerpanellink0_changes);
       const headerpanellink1_changes = {};
-      if (dirty & 132) {
+      if (dirty & 260) {
         headerpanellink1_changes.$$scope = { dirty, ctx: ctx2 };
       }
       headerpanellink1.$set(headerpanellink1_changes);
       const headerpanellink2_changes = {};
-      if (dirty & 128) {
+      if (dirty & 256) {
         headerpanellink2_changes.$$scope = { dirty, ctx: ctx2 };
       }
       headerpanellink2.$set(headerpanellink2_changes);
@@ -2989,7 +3460,7 @@ function create_if_block_1(ctx) {
     }
   };
 }
-function create_default_slot_7(ctx) {
+function create_default_slot_9(ctx) {
   let t_value = ctx[2].name + "";
   let t;
   return {
@@ -3012,7 +3483,7 @@ function create_default_slot_7(ctx) {
     }
   };
 }
-function create_default_slot_6(ctx) {
+function create_default_slot_8(ctx) {
   let t_value = ctx[2].email + "";
   let t;
   return {
@@ -3035,7 +3506,7 @@ function create_default_slot_6(ctx) {
     }
   };
 }
-function create_default_slot_5(ctx) {
+function create_default_slot_7(ctx) {
   let button;
   let current;
   button = new Button({
@@ -3069,14 +3540,14 @@ function create_default_slot_5(ctx) {
     }
   };
 }
-function create_default_slot_4(ctx) {
+function create_default_slot_6(ctx) {
   let headerpaneldivider;
   let t;
   let if_block_anchor;
   let current;
   headerpaneldivider = new HeaderPanelDivider({
     props: {
-      $$slots: { default: [create_default_slot_8] },
+      $$slots: { default: [create_default_slot_10] },
       $$scope: { ctx }
     }
   });
@@ -3106,7 +3577,7 @@ function create_default_slot_4(ctx) {
     },
     p(ctx2, dirty) {
       const headerpaneldivider_changes = {};
-      if (dirty & 128) {
+      if (dirty & 256) {
         headerpaneldivider_changes.$$scope = { dirty, ctx: ctx2 };
       }
       headerpaneldivider.$set(headerpaneldivider_changes);
@@ -3153,12 +3624,12 @@ function create_default_slot_4(ctx) {
     }
   };
 }
-function create_default_slot_3(ctx) {
+function create_default_slot_5(ctx) {
   let headerpanellinks;
   let current;
   headerpanellinks = new HeaderPanelLinks({
     props: {
-      $$slots: { default: [create_default_slot_4] },
+      $$slots: { default: [create_default_slot_6] },
       $$scope: { ctx }
     }
   });
@@ -3175,7 +3646,7 @@ function create_default_slot_3(ctx) {
     },
     p(ctx2, dirty) {
       const headerpanellinks_changes = {};
-      if (dirty & 132) {
+      if (dirty & 260) {
         headerpanellinks_changes.$$scope = { dirty, ctx: ctx2 };
       }
       headerpanellinks.$set(headerpanellinks_changes);
@@ -3195,7 +3666,7 @@ function create_default_slot_3(ctx) {
     }
   };
 }
-function create_default_slot_2(ctx) {
+function create_default_slot_4(ctx) {
   let headeraction;
   let updating_isOpen;
   let current;
@@ -3205,7 +3676,7 @@ function create_default_slot_2(ctx) {
   let headeraction_props = {
     icon: UserAvatarFilledAlt,
     closeIcon: UserAvatarFilledAlt,
-    $$slots: { default: [create_default_slot_3] },
+    $$slots: { default: [create_default_slot_5] },
     $$scope: { ctx }
   };
   if (ctx[1] !== void 0) {
@@ -3226,7 +3697,7 @@ function create_default_slot_2(ctx) {
     },
     p(ctx2, dirty) {
       const headeraction_changes = {};
-      if (dirty & 132) {
+      if (dirty & 260) {
         headeraction_changes.$$scope = { dirty, ctx: ctx2 };
       }
       if (!updating_isOpen && dirty & 2) {
@@ -3251,69 +3722,212 @@ function create_default_slot_2(ctx) {
     }
   };
 }
-function create_default_slot_1(ctx) {
-  let headernav;
-  let t;
-  let headerutilities;
+function create_default_slot_3(ctx) {
+  let sidenavmenuitem0;
+  let t0;
+  let sidenavmenuitem1;
+  let t1;
+  let sidenavmenuitem2;
   let current;
-  headernav = new HeaderNav({
-    props: {
-      $$slots: { default: [create_default_slot_9] },
-      $$scope: { ctx }
-    }
+  sidenavmenuitem0 = new SideNavMenuItem({
+    props: { href: "gallery", text: "Gallery" }
   });
-  headerutilities = new HeaderUtilities({
+  sidenavmenuitem1 = new SideNavMenuItem({
+    props: { href: "leaderboard", text: "Leaderboard" }
+  });
+  sidenavmenuitem2 = new SideNavMenuItem({
+    props: { href: "help", text: "Need Help?" }
+  });
+  return {
+    c() {
+      create_component(sidenavmenuitem0.$$.fragment);
+      t0 = space();
+      create_component(sidenavmenuitem1.$$.fragment);
+      t1 = space();
+      create_component(sidenavmenuitem2.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(sidenavmenuitem0.$$.fragment, nodes);
+      t0 = claim_space(nodes);
+      claim_component(sidenavmenuitem1.$$.fragment, nodes);
+      t1 = claim_space(nodes);
+      claim_component(sidenavmenuitem2.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(sidenavmenuitem0, target, anchor);
+      insert_hydration(target, t0, anchor);
+      mount_component(sidenavmenuitem1, target, anchor);
+      insert_hydration(target, t1, anchor);
+      mount_component(sidenavmenuitem2, target, anchor);
+      current = true;
+    },
+    p: noop,
+    i(local) {
+      if (current)
+        return;
+      transition_in(sidenavmenuitem0.$$.fragment, local);
+      transition_in(sidenavmenuitem1.$$.fragment, local);
+      transition_in(sidenavmenuitem2.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(sidenavmenuitem0.$$.fragment, local);
+      transition_out(sidenavmenuitem1.$$.fragment, local);
+      transition_out(sidenavmenuitem2.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(sidenavmenuitem0, detaching);
+      if (detaching)
+        detach(t0);
+      destroy_component(sidenavmenuitem1, detaching);
+      if (detaching)
+        detach(t1);
+      destroy_component(sidenavmenuitem2, detaching);
+    }
+  };
+}
+function create_default_slot_2(ctx) {
+  let sidenavitems;
+  let current;
+  sidenavitems = new SideNavItems({
     props: {
-      $$slots: { default: [create_default_slot_2] },
+      $$slots: { default: [create_default_slot_3] },
       $$scope: { ctx }
     }
   });
   return {
     c() {
+      create_component(sidenavitems.$$.fragment);
+    },
+    l(nodes) {
+      claim_component(sidenavitems.$$.fragment, nodes);
+    },
+    m(target, anchor) {
+      mount_component(sidenavitems, target, anchor);
+      current = true;
+    },
+    p(ctx2, dirty) {
+      const sidenavitems_changes = {};
+      if (dirty & 256) {
+        sidenavitems_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      sidenavitems.$set(sidenavitems_changes);
+    },
+    i(local) {
+      if (current)
+        return;
+      transition_in(sidenavitems.$$.fragment, local);
+      current = true;
+    },
+    o(local) {
+      transition_out(sidenavitems.$$.fragment, local);
+      current = false;
+    },
+    d(detaching) {
+      destroy_component(sidenavitems, detaching);
+    }
+  };
+}
+function create_default_slot_1(ctx) {
+  let headernav;
+  let t0;
+  let headerutilities;
+  let t1;
+  let sidenav;
+  let updating_isOpen;
+  let current;
+  headernav = new HeaderNav({
+    props: {
+      $$slots: { default: [create_default_slot_11] },
+      $$scope: { ctx }
+    }
+  });
+  headerutilities = new HeaderUtilities({
+    props: {
+      $$slots: { default: [create_default_slot_4] },
+      $$scope: { ctx }
+    }
+  });
+  function sidenav_isOpen_binding(value) {
+    ctx[6](value);
+  }
+  let sidenav_props = {
+    $$slots: { default: [create_default_slot_2] },
+    $$scope: { ctx }
+  };
+  if (ctx[0] !== void 0) {
+    sidenav_props.isOpen = ctx[0];
+  }
+  sidenav = new SideNav({ props: sidenav_props });
+  binding_callbacks.push(() => bind(sidenav, "isOpen", sidenav_isOpen_binding));
+  return {
+    c() {
       create_component(headernav.$$.fragment);
-      t = space();
+      t0 = space();
       create_component(headerutilities.$$.fragment);
+      t1 = space();
+      create_component(sidenav.$$.fragment);
     },
     l(nodes) {
       claim_component(headernav.$$.fragment, nodes);
-      t = claim_space(nodes);
+      t0 = claim_space(nodes);
       claim_component(headerutilities.$$.fragment, nodes);
+      t1 = claim_space(nodes);
+      claim_component(sidenav.$$.fragment, nodes);
     },
     m(target, anchor) {
       mount_component(headernav, target, anchor);
-      insert_hydration(target, t, anchor);
+      insert_hydration(target, t0, anchor);
       mount_component(headerutilities, target, anchor);
+      insert_hydration(target, t1, anchor);
+      mount_component(sidenav, target, anchor);
       current = true;
     },
     p(ctx2, dirty) {
       const headernav_changes = {};
-      if (dirty & 128) {
+      if (dirty & 256) {
         headernav_changes.$$scope = { dirty, ctx: ctx2 };
       }
       headernav.$set(headernav_changes);
       const headerutilities_changes = {};
-      if (dirty & 134) {
+      if (dirty & 262) {
         headerutilities_changes.$$scope = { dirty, ctx: ctx2 };
       }
       headerutilities.$set(headerutilities_changes);
+      const sidenav_changes = {};
+      if (dirty & 256) {
+        sidenav_changes.$$scope = { dirty, ctx: ctx2 };
+      }
+      if (!updating_isOpen && dirty & 1) {
+        updating_isOpen = true;
+        sidenav_changes.isOpen = ctx2[0];
+        add_flush_callback(() => updating_isOpen = false);
+      }
+      sidenav.$set(sidenav_changes);
     },
     i(local) {
       if (current)
         return;
       transition_in(headernav.$$.fragment, local);
       transition_in(headerutilities.$$.fragment, local);
+      transition_in(sidenav.$$.fragment, local);
       current = true;
     },
     o(local) {
       transition_out(headernav.$$.fragment, local);
       transition_out(headerutilities.$$.fragment, local);
+      transition_out(sidenav.$$.fragment, local);
       current = false;
     },
     d(detaching) {
       destroy_component(headernav, detaching);
       if (detaching)
-        detach(t);
+        detach(t0);
       destroy_component(headerutilities, detaching);
+      if (detaching)
+        detach(t1);
+      destroy_component(sidenav, detaching);
     }
   };
 }
@@ -3383,7 +3997,7 @@ function create_else_block(ctx) {
 function create_if_block(ctx) {
   let current;
   const default_slot_template = ctx[4].default;
-  const default_slot = create_slot(default_slot_template, ctx, ctx[7], null);
+  const default_slot = create_slot(default_slot_template, ctx, ctx[8], null);
   return {
     c() {
       if (default_slot)
@@ -3401,8 +4015,8 @@ function create_if_block(ctx) {
     },
     p(ctx2, dirty) {
       if (default_slot) {
-        if (default_slot.p && (!current || dirty & 128)) {
-          update_slot_base(default_slot, default_slot_template, ctx2, ctx2[7], !current ? get_all_dirty_from_scope(ctx2[7]) : get_slot_changes(default_slot_template, ctx2[7], dirty, null), null);
+        if (default_slot.p && (!current || dirty & 256)) {
+          update_slot_base(default_slot, default_slot_template, ctx2, ctx2[8], !current ? get_all_dirty_from_scope(ctx2[8]) : get_slot_changes(default_slot_template, ctx2[8], dirty, null), null);
         }
       }
     },
@@ -3499,11 +4113,12 @@ function create_fragment(ctx) {
   let content;
   let current;
   function header_isSideNavOpen_binding(value) {
-    ctx[6](value);
+    ctx[7](value);
   }
   let header_props = {
     company: "SXS0130",
     platformName: "Cartoon Star",
+    persistentHamburgerMenu: "true",
     $$slots: {
       "skip-to-content": [create_skip_to_content_slot],
       default: [create_default_slot_1]
@@ -3558,7 +4173,7 @@ function create_fragment(ctx) {
     },
     p(ctx2, [dirty]) {
       const header_changes = {};
-      if (dirty & 134) {
+      if (dirty & 263) {
         header_changes.$$scope = { dirty, ctx: ctx2 };
       }
       if (!updating_isSideNavOpen && dirty & 1) {
@@ -3568,7 +4183,7 @@ function create_fragment(ctx) {
       }
       header.$set(header_changes);
       const content_changes = {};
-      if (dirty & 132) {
+      if (dirty & 260) {
         content_changes.$$scope = { dirty, ctx: ctx2 };
       }
       content.$set(content_changes);
@@ -3638,13 +4253,17 @@ function instance($$self, $$props, $$invalidate) {
     isOpen1 = value;
     $$invalidate(1, isOpen1);
   }
+  function sidenav_isOpen_binding(value) {
+    isSideNavOpen = value;
+    $$invalidate(0, isSideNavOpen);
+  }
   function header_isSideNavOpen_binding(value) {
     isSideNavOpen = value;
     $$invalidate(0, isSideNavOpen);
   }
   $$self.$$set = ($$props2) => {
     if ("$$scope" in $$props2)
-      $$invalidate(7, $$scope = $$props2.$$scope);
+      $$invalidate(8, $$scope = $$props2.$$scope);
   };
   return [
     isSideNavOpen,
@@ -3653,6 +4272,7 @@ function instance($$self, $$props, $$invalidate) {
     logout,
     slots,
     headeraction_isOpen_binding,
+    sidenav_isOpen_binding,
     header_isSideNavOpen_binding,
     $$scope
   ];

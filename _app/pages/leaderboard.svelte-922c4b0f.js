@@ -6655,9 +6655,12 @@ function instance($$self, $$props, $$invalidate) {
       if (found != -1) {
         $$invalidate(0, users[found]["XP"] += XP, users);
       } else {
-        users.push({ id: i, user, XP, email });
+        users.push({ id: i + 1, user, XP, email });
       }
     }
+    users.sort((a, b) => {
+      a.XP < b.XP;
+    });
     console.log(users);
   });
   onDestroy(unsubscribe);

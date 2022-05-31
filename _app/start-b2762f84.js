@@ -778,7 +778,7 @@ const components = [
   () => __vitePreload(() => import("./pages/gallery.svelte-ebd288a4.js"), true ? ["pages/gallery.svelte-ebd288a4.js","assets/pages/gallery.svelte-95f9ff87.css","chunks/index-f49af62c.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/index-bd33cef0.js","chunks/cartoons-fccfd6a7.js","chunks/index-c8a6f409.js","chunks/user-caa78ed2.js"] : void 0),
   () => __vitePreload(() => import("./pages/help.svelte-01a943ac.js"), true ? ["pages/help.svelte-01a943ac.js","chunks/index-f49af62c.js"] : void 0),
   () => __vitePreload(() => import("./pages/index.svelte-4cb8804a.js"), true ? ["pages/index.svelte-4cb8804a.js","chunks/index-f49af62c.js"] : void 0),
-  () => __vitePreload(() => import("./pages/leaderboard.svelte-922c4b0f.js"), true ? ["pages/leaderboard.svelte-922c4b0f.js","chunks/index-f49af62c.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/index-c8a6f409.js","chunks/Close-d926bb3c.js","chunks/cartoons-fccfd6a7.js"] : void 0),
+  () => __vitePreload(() => import("./pages/leaderboard.svelte-f664fa53.js"), true ? ["pages/leaderboard.svelte-f664fa53.js","chunks/index-f49af62c.js","chunks/HeaderSearch.svelte_svelte_type_style_lang-e51739eb.js","assets/HeaderSearch.svelte_svelte_type_style_lang-dae0c45e.css","chunks/index-c8a6f409.js","chunks/Close-d926bb3c.js","chunks/cartoons-fccfd6a7.js"] : void 0),
   () => __vitePreload(() => import("./pages/login.svelte-ef912956.js"), true ? ["pages/login.svelte-ef912956.js","chunks/index-f49af62c.js","chunks/user-caa78ed2.js","chunks/index-c8a6f409.js","chunks/navigation-0e6511d1.js","chunks/singletons-d1fb5791.js"] : void 0)
 ];
 const dictionary = {
@@ -910,7 +910,7 @@ function notifiable_store(value) {
 }
 function create_updated_store() {
   const { set, subscribe } = writable(false);
-  const initial = "1653920647987";
+  const initial = "1654007884787";
   let timeout;
   async function check() {
     clearTimeout(timeout);

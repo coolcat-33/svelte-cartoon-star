@@ -7,6 +7,7 @@
       ToolbarMenu,
       ToolbarMenuItem,
       Button,
+      Pagination
     } from "carbon-components-svelte";
 
     import {cartoons} from "../stores/cartoons"
@@ -27,10 +28,11 @@
                 users[found]['XP'] += XP
             } else {
               
-                users.push({id:i+1, user, XP, email})
+                users.push({id:i, user, XP, email})
             }
         }
-        users.sort((a,b) => {a.XP < b.XP})
+        users.sort((a, b) => b['XP'] - a['XP']);
+        
         console.log(users)
     })
 
@@ -47,12 +49,13 @@
   
   <DataTable
     sortable
+    
     title="Leaderboard"
     description="Look at the Leaderboard to see the users and their XP points"
     headers={[
-      { key: "user", value: "Name" },
+      { key: "user", value: "Name"},
       { key: "email", value: "Email" },
-      { key: "XP", value: "XP" }
+      { key: "XP", value: "XP"},
     ]}
     rows={users}
   >
@@ -62,4 +65,3 @@
       </ToolbarContent>
     </Toolbar>
   </DataTable>
-  
